@@ -6,11 +6,8 @@
 package com.nokia.whispernet.projectentities;
 
 import java.io.Serializable;
-import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -52,26 +49,5 @@ public class Item implements Serializable {
      */
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == this) {
-            return true;
-        }
-        
-        if (o instanceof Item) {
-            Item other = (Item) o;
-            return Objects.equals(this.name, other.getName());
-        }
-        
-        return false;
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 53 * hash + Objects.hashCode(this.name);
-        return hash;
     }
 }
