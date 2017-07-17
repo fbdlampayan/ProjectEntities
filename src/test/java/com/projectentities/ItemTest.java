@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.nokia.whispernet.projectentities;
+package com.projectentities;
 
+import com.projectentities.Item;
 import java.util.HashSet;
 import org.junit.Test;
 import static org.junit.Assert.*;
